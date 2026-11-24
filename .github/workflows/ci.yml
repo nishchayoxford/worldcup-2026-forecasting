@@ -1,0 +1,47 @@
+name: Research checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: ${{ matrix.os }} / Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: '3.11'
+          - os: ubuntu-latest
+            python: '3.12'
+          - os: windows-latest
+            python: '3.11'
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Install uv
+        uses: astral-sh/setup-uv@d0d8abe699bfb85fec6de9f7adb5ae17292296ff # v6
+        with:
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+      - name: Install Python and locked dependencies
+        run: uv sync --locked --python ${{ matrix.python }}
+      - name: Static checks
+        run: uv run ruff check .
+      - name: Automated tests
+        run: uv run pytest -q
+      - name: Reproduce every forecast and reported score
+        run: uv run python run_pipeline.py --check
+      - name: Rebuild publication figures
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.11'
+        run: uv run python plots.py

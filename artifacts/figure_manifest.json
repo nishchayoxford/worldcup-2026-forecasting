@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-24T14:21:57.599792+00:00",
+  "study_type": "retrospective pre-tournament-information backtest; not contemporaneous predictions",
+  "test_match_count": 72,
+  "figure_count": 13,
+  "file_count": 26,
+  "diagnostics_sha256": "833bdcc7dfee71aecc1ef4d6521acda58dfca36f9ea31cbc6f879edc004b01e9",
+  "plots_sha256": "c3acc55afc52a413130e0d11c0871fd07d5f30fe354544b2c4684b1b7ee16dc5",
+  "environment": {
+    "python": "3.11.16",
+    "matplotlib": "3.11.2",
+    "numpy": "2.4.6"
+  },
+  "reproduce": "uv run python plots.py",
+  "figures": [
+    {
+      "id": "01_research_design",
+      "title": "Separate selection from evaluation",
+      "caption": "Ratings are frozen for validation and again for the tournament. The final refit includes validation history.\nRetrospective reconstruction, not evidence of pre-event publication; current snapshot filtered by match date.",
+      "data_keys": [
+        "counts",
+        "audit"
+      ],
+      "png": "docs/figures/01_research_design.png",
+      "svg": "docs/figures/01_research_design.svg",
+      "sha256": {
+        "png": "4fd911e7a963f5673e4c98c587a07230559fa8e894f648ff42c06ecded9089dd",
+        "svg": "ee6987f00ad1eeb7469cb2b7d387359e8abf150bf83136a22cfdba32e4ef6b85"
+      },
+      "size_inches": [
+        12.0,
+        6.6
+      ]
+    },
+    {
+      "id": "02_data_coverage",
+      "title": "The evidence behind the ratings",
+      "caption": "Counts are eligible international matches, not unique teams. Training begins in 1990; no time weighting is applied.\n2026 is a partial year ending 10 June. Annual volume is coverage, not a measure of predictive quality.",
+      "data_keys": [
+        "annual_coverage"
+      ],
+      "png": "docs/figures/02_data_coverage.png",
+      "svg": "docs/figures/02_data_coverage.svg",
+      "sha256": {
+        "png": "cb5fe7cb9e990686c86133326ba283d65c5fd619b9f62d12217d19e1b63254a7",
+        "svg": "a08d925a7fe6f0ca8447f27a6679e64a36dfeb394b082c09fd5f62e9a0f4f955"
+      },
+      "size_inches": [
+        12.0,
+        6.6
+      ]
+    },
+    {
+      "id": "03_rating_trajectories",
+      "title": "How the leading teams reached the cutoff",
+      "caption": "Eight tournament teams selected by their cutoff Elo rating, not by tournament results. Each line shows post-match-day ratings.\n1500 initialization; simultaneous-day updates; constant K and home advantage selected on 2022–23 validation.",
+      "data_keys": [
+        "rating_traces.elo",
+        "trajectory_selection"
+      ],
+      "png": "docs/figures/03_rating_trajectories.png",
+      "svg": "docs/figures/03_rating_trajectories.svg",
+      "sha256": {
+        "png": "b985de908eac7c6e312f3151b84ef663da20a84587cb9bd705b61b774708c6d6",
+        "svg": "570bf4728e12825d505f52e447655c8235b02a3e961c3db641fe057789af5ea3"
+      },
+      "size_inches": [
+        14.0,
+        8.5
+      ]
+    },
+    {
+      "id": "04_team_ranking",
+      "title": "The pre-tournament strength hierarchy",
+      "caption": "Top 16 among the 48 tournament participants; this is not a ranking of every historical national side.\nRatings use matches strictly before 11 June 2026. Rating points are not title probabilities or uncertainty estimates.",
+      "data_keys": [
+        "ranking"
+      ],
+      "png": "docs/figures/04_team_ranking.png",
+      "svg": "docs/figures/04_team_ranking.svg",
+      "sha256": {
+        "png": "23c7b6527c224f9fad4f94c23a397b968ac7a2a32796881579ff38c33883f3b5",
+        "svg": "a176bc988d7d3185a108da0c78a1f2fca25eb1f7f03337de4b6d2e51326454cf"
+      },
+      "size_inches": [
+        12.0,
+        8.5
+      ]
+    },
+    {
+      "id": "05_parameter_search",
+      "title": "Selection over the complete parameter grid",
+      "caption": "Every predeclared candidate is shown: 2 K values × 2 home advantages × 3 draw/scale values per family.\nCells are frozen-model 2022–23 validation log loss; lower is better. Orange outlines mark the selected candidate.",
+      "data_keys": [
+        "parameter_grid",
+        "fitted.parameters"
+      ],
+      "png": "docs/figures/05_parameter_search.png",
+      "svg": "docs/figures/05_parameter_search.svg",
+      "sha256": {
+        "png": "3d3b26179dbb78b002024fa725984b1fd7137fb339faaeef66d7688d721c0d01",
+        "svg": "3894d39edde0de533a46cc85d886df92d3932446fec1c372fb4445731dc31307"
+      },
+      "size_inches": [
+        13.0,
+        8.0
+      ]
+    },
+    {
+      "id": "06_validation_path",
+      "title": "Validation performance accumulates over time",
+      "caption": "Cumulative mean loss over chronological validation matches, using fixed training-end ratings throughout.\nThese are validation scoring paths, not epochs, optimization traces or online rating updates; the window selected the models.",
+      "data_keys": [
+        "validation"
+      ],
+      "png": "docs/figures/06_validation_path.png",
+      "svg": "docs/figures/06_validation_path.svg",
+      "sha256": {
+        "png": "12c6c5890e7a2dd9bb3e988da605f0c70ccca42f2f0144489d661a5ce1dfd63d",
+        "svg": "551a07c0cd4443756a165081ef108c6f7d78163665d6721343ab0ea58c4459ce"
+      },
+      "size_inches": [
+        12.0,
+        6.6
+      ]
+    },
+    {
+      "id": "07_model_comparison",
+      "title": "Held-out scores, including simple baselines",
+      "caption": "Log loss uses natural logarithms; Brier is the sum over three classes, not the class-average convention.\nAccuracy is argmax classification. Uniform ties choose home; its accuracy is not random-guess expected accuracy.",
+      "data_keys": [
+        "metrics"
+      ],
+      "png": "docs/figures/07_model_comparison.png",
+      "svg": "docs/figures/07_model_comparison.svg",
+      "sha256": {
+        "png": "df607bdec483f708991c655bfc9fbadc42c931da9fabd22d91351968ee37aa4c",
+        "svg": "eecfd0a45de794388f4cc76dce1ab80b208cb3dbfe152ac22f22b39eeac5a5cb"
+      },
+      "size_inches": [
+        14.0,
+        6.8
+      ]
+    },
+    {
+      "id": "08_calibration",
+      "title": "Calibration: probability versus observed frequency",
+      "caption": "Ten equal-width probability bins; labels show bin counts n. Empty bins are omitted. Diagonal indicates exact calibration.\n95% Wilson binomial intervals are unadjusted for repeated-team/group dependence; no recalibration is fitted to test outcomes.",
+      "data_keys": [
+        "calibration"
+      ],
+      "png": "docs/figures/08_calibration.png",
+      "svg": "docs/figures/08_calibration.svg",
+      "sha256": {
+        "png": "e6cfda1e841a3be007c181a1abb317af85621e23fd631d55fc497d9c4cbeedad",
+        "svg": "4cf104e66cd2652ce4505879540dae9949384932b7270039a435e9c4e81a9225"
+      },
+      "size_inches": [
+        16.0,
+        9.0
+      ]
+    },
+    {
+      "id": "09_confusion_matrices",
+      "title": "Where the classification errors occur",
+      "caption": "Counts, not row-normalized percentages. Rows are actual classes; columns are argmax predictions.\nNonzero draw probabilities do not imply draw picks: the draw column is retained even when every entry is zero.",
+      "data_keys": [
+        "confusion"
+      ],
+      "png": "docs/figures/09_confusion_matrices.png",
+      "svg": "docs/figures/09_confusion_matrices.svg",
+      "sha256": {
+        "png": "54d80de2032b2e02f5fbdbfc98d102b616a52d18f9f1197b24475e0e75f8989d",
+        "svg": "4723ca398d8a45f5b63b0f15d4b4e8289ac6923ff91171966181cbd0099b50bf"
+      },
+      "size_inches": [
+        12.0,
+        6.8
+      ]
+    },
+    {
+      "id": "10_match_probabilities",
+      "title": "Every match, every outcome probability",
+      "caption": "All held-out fixtures, sorted by group, date and match ID. H / D / A = listed home win / draw / listed away win.\nNumbers are forecast percentages; orange outlines mark the realized class. Home/away listing is not always venue advantage.",
+      "data_keys": [
+        "matches"
+      ],
+      "png": "docs/figures/10_match_probabilities.png",
+      "svg": "docs/figures/10_match_probabilities.svg",
+      "sha256": {
+        "png": "b63dcd0952999f44c05dd2ca4ddc3a7df3d8e609474b4946b36e231049b4de8f",
+        "svg": "29defc1dd9e6fbf28a6193417c26306043242acdddf5105711e8659f59f43ae1"
+      },
+      "size_inches": [
+        16.0,
+        23.0
+      ]
+    },
+    {
+      "id": "11_group_performance",
+      "title": "Performance varies across tournament groups",
+      "caption": "Arithmetic mean log loss within each group; dotted lines show model-wide averages. No shrinkage or group-specific fitting.\nSmall groups make apparent differences noisy. Group breakdowns are descriptive, not independent validation sets.",
+      "data_keys": [
+        "group_scores",
+        "metrics"
+      ],
+      "png": "docs/figures/11_group_performance.png",
+      "svg": "docs/figures/11_group_performance.svg",
+      "sha256": {
+        "png": "82ce36bbe85b442ee8996f0ddf210069483e1b883690cb3324f9b4d69decf86c",
+        "svg": "1b6bd1402d810a151efd97f4be309ed8b3e70e28b03eefbb6ccd9c55bd7e6c3f"
+      },
+      "size_inches": [
+        12.0,
+        6.6
+      ]
+    },
+    {
+      "id": "12_uncertainty",
+      "title": "Apparent advantages carry uncertainty",
+      "caption": "Paired log-loss differences; 4,000 resamples, seed 2026, percentile 95% intervals. Negative values favor the first model.\nGroup resampling keeps each group intact; only 12 clusters. Conditional on fixed models; not team/network robust or evidence of betting edge.",
+      "data_keys": [
+        "comparisons",
+        "uncertainty"
+      ],
+      "png": "docs/figures/12_uncertainty.png",
+      "svg": "docs/figures/12_uncertainty.svg",
+      "sha256": {
+        "png": "465f1e3d35909941c12cc1755193a065a5d57db7ebbaf989148abd9985d80b01",
+        "svg": "9ed88ab965ee63ce8984dcd852cfeeaa2877c2a03c01c95b60fe479f4712ad39"
+      },
+      "size_inches": [
+        13.0,
+        7.5
+      ]
+    },
+    {
+      "id": "13_forecast_errors",
+      "title": "The most confident mistakes",
+      "caption": "For each model, the eight incorrect argmax predictions with highest confidence; ties use date and match ID.\nLabels show actual score. This post-hoc diagnostic does not alter parameters or recalibrate forecasts; high confidence is not certainty.",
+      "data_keys": [
+        "matches"
+      ],
+      "png": "docs/figures/13_forecast_errors.png",
+      "svg": "docs/figures/13_forecast_errors.svg",
+      "sha256": {
+        "png": "34ed96f0b32ac2fd8f2a45d3a53680b47dc6b3e3fb7a03e3f2ef630df31a69ab",
+        "svg": "2ba4326c12ae1382178009246a02614993b4db029e51285388cd7680872900a9"
+      },
+      "size_inches": [
+        16.0,
+        10.0
+      ]
+    }
+  ]
+}

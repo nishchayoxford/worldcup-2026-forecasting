@@ -1,0 +1,66 @@
+{
+  "study": "Retrospective pre-tournament-information backtest",
+  "created_utc": "2026-11-24T13:45:28.371618+00:00",
+  "cutoff_exclusive": "2026-06-11",
+  "evaluated_matches": 72,
+  "data_audit": {
+    "history_matches": 32325,
+    "history_first_date": "1990-01-12",
+    "history_last_date": "2026-06-10",
+    "fixtures": 72,
+    "teams": 48,
+    "groups": 12,
+    "target_ids_match": true,
+    "data_manifest_sha256": "afb9e446046983bccd6d64638f3e1d7d626dec7e3fb29b62ccbcc19a1bf0d6fd",
+    "input_hashes": {
+      "history.csv": "886c9f68716958607132a86012472a689dacd6c5ed9f0693b4434e2f40893d1c",
+      "fixtures.csv": "e381fa8cc9c1332136cc219cab349b126fb8bba8c1ce652a883a5b5de0df0bb6",
+      "outcomes.csv": "c7d0b23aed34ec42f0f1601d2bc452681602975ba86659881e56d835ceb3ccf6"
+    }
+  },
+  "models": {
+    "elo": {
+      "accuracy": 0.6111111111111112,
+      "log_loss": 0.9231492144393566,
+      "brier_sum": 0.5430517385183191,
+      "correct": 44
+    },
+    "poisson": {
+      "accuracy": 0.6111111111111112,
+      "log_loss": 0.8947209485508423,
+      "brier_sum": 0.5317863257514452,
+      "correct": 44
+    },
+    "historical": {
+      "accuracy": 0.4583333333333333,
+      "log_loss": 1.0834525375699358,
+      "brier_sum": 0.6546323891161525,
+      "correct": 33
+    },
+    "uniform": {
+      "accuracy": 0.4722222222222222,
+      "log_loss": 1.0986122886681084,
+      "brier_sum": 0.6666666666666662,
+      "correct": 34
+    }
+  },
+  "selected_parameters": {
+    "elo": {
+      "k": 40,
+      "home_advantage": 60,
+      "draw_rate": 0.22
+    },
+    "poisson": {
+      "k": 40,
+      "home_advantage": 60,
+      "scale": 1.75
+    }
+  },
+  "forecast_sha256": "cdda7e3d0ffd338eac0ba91a30add6a9a6fcd33cc9ab92fad4b85ef24f76f72c",
+  "code_sha256": "3d847d80d22f4527cb627d4bab8f6a5f8421213c69532425f2036d1469e81ecc",
+  "metric_conventions": {
+    "brier": "sum over three classes, then average over matches",
+    "accuracy": "argmax; ties choose home before draw before away",
+    "log_loss": "natural logarithm; lower is better"
+  }
+}

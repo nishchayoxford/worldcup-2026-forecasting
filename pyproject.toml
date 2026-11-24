@@ -1,0 +1,26 @@
+[project]
+name = "worldcup-2026-forecasting"
+version = "1.0.0"
+description = "Reproducible football probability forecasting with chronological validation and a frozen World Cup holdout."
+requires-python = ">=3.11"
+authors = [{ name = "Nishchay Tiwari" }]
+license = "MIT"
+dependencies = ["matplotlib>=3.9,<4", "numpy>=1.26,<3"]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["test_*.py"]
+norecursedirs = [".git", ".venv", "artifacts", "docs", "data"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

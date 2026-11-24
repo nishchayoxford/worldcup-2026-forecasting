@@ -1,0 +1,3727 @@
+{
+  "created_utc": "2026-11-24T13:45:28.412901+00:00",
+  "study_type": "retrospective pre-tournament-information backtest; not contemporaneous predictions",
+  "count": 72,
+  "predictions_sha256": "0aa8838a332a31dcdf2ff53af80fdf77e54578aa924a92c0f3b85af84cbd588c",
+  "outcomes_sha256": "c7d0b23aed34ec42f0f1601d2bc452681602975ba86659881e56d835ceb3ccf6",
+  "forecast_sha256": "cdda7e3d0ffd338eac0ba91a30add6a9a6fcd33cc9ab92fad4b85ef24f76f72c",
+  "models": {
+    "elo": {
+      "count": 72,
+      "log_loss": 0.9231492144393566,
+      "brier_sum": 0.5430517385183191,
+      "accuracy": 0.6111111111111112,
+      "calibration": {
+        "top_label_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 2,
+            "mean_probability": 0.39371223061769406,
+            "observed_frequency": 0.5
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 18,
+            "mean_probability": 0.4354716475913436,
+            "observed_frequency": 0.3333333333333333
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 20,
+            "mean_probability": 0.5550446422168415,
+            "observed_frequency": 0.8
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 21,
+            "mean_probability": 0.6425665722369995,
+            "observed_frequency": 0.6666666666666666
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 11,
+            "mean_probability": 0.757129548448112,
+            "observed_frequency": 0.6363636363636364
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          }
+        ],
+        "top_label_ece": 0.1220097134308918,
+        "by_class": {
+          "home_win": {
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 1,
+                "mean_probability": 0.0902370063369531,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 10,
+                "mean_probability": 0.17001250592829315,
+                "observed_frequency": 0.1
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.3,
+                "count": 12,
+                "mean_probability": 0.23790006361697855,
+                "observed_frequency": 0.25
+              },
+              {
+                "lower": 0.3,
+                "upper": 0.4,
+                "count": 7,
+                "mean_probability": 0.3606148690385545,
+                "observed_frequency": 0.5714285714285714
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 12,
+                "mean_probability": 0.43255663028428804,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6,
+                "count": 9,
+                "mean_probability": 0.5447262406234806,
+                "observed_frequency": 0.7777777777777778
+              },
+              {
+                "lower": 0.6,
+                "upper": 0.7,
+                "count": 12,
+                "mean_probability": 0.648582495852333,
+                "observed_frequency": 0.5833333333333334
+              },
+              {
+                "lower": 0.7,
+                "upper": 0.8,
+                "count": 9,
+                "mean_probability": 0.7593149631361426,
+                "observed_frequency": 0.6666666666666666
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ],
+            "ece": 0.09631758483856606
+          },
+          "draw": {
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 36,
+                "mean_probability": 0.176477900483038,
+                "observed_frequency": 0.2777777777777778
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.3,
+                "count": 36,
+                "mean_probability": 0.21348533620090493,
+                "observed_frequency": 0.2777777777777778
+              },
+              {
+                "lower": 0.3,
+                "upper": 0.4,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.6,
+                "upper": 0.7,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.7,
+                "upper": 0.8,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ],
+            "ece": 0.08279615943580633
+          },
+          "away_win": {
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 7,
+                "mean_probability": 0.08627469717409085,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 13,
+                "mean_probability": 0.1557084929693063,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.3,
+                "count": 10,
+                "mean_probability": 0.2434684062838703,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.3,
+                "upper": 0.4,
+                "count": 14,
+                "mean_probability": 0.35480954746707066,
+                "observed_frequency": 0.07142857142857142
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 6,
+                "mean_probability": 0.44130168220545457,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6,
+                "count": 11,
+                "mean_probability": 0.5634869707932274,
+                "observed_frequency": 0.8181818181818182
+              },
+              {
+                "lower": 0.6,
+                "upper": 0.7,
+                "count": 9,
+                "mean_probability": 0.6345453407498884,
+                "observed_frequency": 0.7777777777777778
+              },
+              {
+                "lower": 0.7,
+                "upper": 0.8,
+                "count": 2,
+                "mean_probability": 0.7472951823519751,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ],
+            "ece": 0.22587898234249287
+          }
+        }
+      }
+    },
+    "poisson": {
+      "count": 72,
+      "log_loss": 0.8947209485508423,
+      "brier_sum": 0.5317863257514452,
+      "accuracy": 0.6111111111111112,
+      "calibration": {
+        "top_label_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 6,
+            "mean_probability": 0.3872964939226993,
+            "observed_frequency": 0.3333333333333333
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 14,
+            "mean_probability": 0.43889544756077825,
+            "observed_frequency": 0.35714285714285715
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 15,
+            "mean_probability": 0.5603976784622007,
+            "observed_frequency": 0.8
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 20,
+            "mean_probability": 0.6473217847196021,
+            "observed_frequency": 0.7
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 13,
+            "mean_probability": 0.7471215456746323,
+            "observed_frequency": 0.6923076923076923
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 4,
+            "mean_probability": 0.8091887548996948,
+            "observed_frequency": 0.5
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          }
+        ],
+        "top_label_ece": 0.11201735376987552,
+        "by_class": {
+          "home_win": {
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 2,
+                "mean_probability": 0.06451357502929657,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 15,
+                "mean_probability": 0.14924481397098283,
+                "observed_frequency": 0.13333333333333333
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.3,
+                "count": 7,
+                "mean_probability": 0.225588769118993,
+                "observed_frequency": 0.2857142857142857
+              },
+              {
+                "lower": 0.3,
+                "upper": 0.4,
+                "count": 9,
+                "mean_probability": 0.3616698394089519,
+                "observed_frequency": 0.5555555555555556
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 9,
+                "mean_probability": 0.4356866223114344,
+                "observed_frequency": 0.5555555555555556
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6,
+                "count": 8,
+                "mean_probability": 0.5563157601125572,
+                "observed_frequency": 0.75
+              },
+              {
+                "lower": 0.6,
+                "upper": 0.7,
+                "count": 9,
+                "mean_probability": 0.6553832819257805,
+                "observed_frequency": 0.6666666666666666
+              },
+              {
+                "lower": 0.7,
+                "upper": 0.8,
+                "count": 9,
+                "mean_probability": 0.749550128417821,
+                "observed_frequency": 0.6666666666666666
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 4,
+                "mean_probability": 0.8091887548996948,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ],
+            "ece": 0.10064028301991101
+          },
+          "draw": {
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 21,
+                "mean_probability": 0.16964845503405612,
+                "observed_frequency": 0.2857142857142857
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.3,
+                "count": 51,
+                "mean_probability": 0.23364878037428566,
+                "observed_frequency": 0.27450980392156865
+              },
+              {
+                "lower": 0.3,
+                "upper": 0.4,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.6,
+                "upper": 0.7,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.7,
+                "upper": 0.8,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ],
+            "ece": 0.06279575896105907
+          },
+          "away_win": {
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 11,
+                "mean_probability": 0.06522447534636594,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 14,
+                "mean_probability": 0.14560033015071147,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.3,
+                "count": 8,
+                "mean_probability": 0.24996310082023876,
+                "observed_frequency": 0.125
+              },
+              {
+                "lower": 0.3,
+                "upper": 0.4,
+                "count": 12,
+                "mean_probability": 0.3431328699193796,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 5,
+                "mean_probability": 0.4446713330095971,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6,
+                "count": 7,
+                "mean_probability": 0.5650627280046505,
+                "observed_frequency": 0.8571428571428571
+              },
+              {
+                "lower": 0.6,
+                "upper": 0.7,
+                "count": 11,
+                "mean_probability": 0.6407260142781833,
+                "observed_frequency": 0.7272727272727273
+              },
+              {
+                "lower": 0.7,
+                "upper": 0.8,
+                "count": 4,
+                "mean_probability": 0.7416572345024575,
+                "observed_frequency": 0.75
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ],
+            "ece": 0.18231216070083384
+          }
+        }
+      }
+    },
+    "uniform": {
+      "count": 72,
+      "log_loss": 1.0986122886681084,
+      "brier_sum": 0.6666666666666662,
+      "accuracy": 0.4722222222222222,
+      "calibration": {
+        "top_label_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 72,
+            "mean_probability": 0.3333333333333331,
+            "observed_frequency": 0.4722222222222222
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          }
+        ],
+        "top_label_ece": 0.13888888888888912,
+        "by_class": {
+          "home_win": {
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.3,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.3,
+                "upper": 0.4,
+                "count": 72,
+                "mean_probability": 0.3333333333333331,
+                "observed_frequency": 0.4722222222222222
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.6,
+                "upper": 0.7,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.7,
+                "upper": 0.8,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ],
+            "ece": 0.13888888888888912
+          },
+          "draw": {
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.3,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.3,
+                "upper": 0.4,
+                "count": 72,
+                "mean_probability": 0.3333333333333331,
+                "observed_frequency": 0.2777777777777778
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.6,
+                "upper": 0.7,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.7,
+                "upper": 0.8,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ],
+            "ece": 0.0555555555555553
+          },
+          "away_win": {
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.3,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.3,
+                "upper": 0.4,
+                "count": 72,
+                "mean_probability": 0.3333333333333331,
+                "observed_frequency": 0.25
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.6,
+                "upper": 0.7,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.7,
+                "upper": 0.8,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ],
+            "ece": 0.08333333333333309
+          }
+        }
+      }
+    },
+    "historical": {
+      "count": 72,
+      "log_loss": 1.0834525375699358,
+      "brier_sum": 0.6546323891161525,
+      "accuracy": 0.4583333333333333,
+      "calibration": {
+        "top_label_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 63,
+            "mean_probability": 0.38205015879969306,
+            "observed_frequency": 0.42857142857142855
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 9,
+            "mean_probability": 0.5073706896551724,
+            "observed_frequency": 0.6666666666666666
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          }
+        ],
+        "top_label_ece": 0.06061810817670533,
+        "by_class": {
+          "home_win": {
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.3,
+                "count": 3,
+                "mean_probability": 0.2584051724137931,
+                "observed_frequency": 0.6666666666666666
+              },
+              {
+                "lower": 0.3,
+                "upper": 0.4,
+                "count": 63,
+                "mean_probability": 0.38205015879969306,
+                "observed_frequency": 0.42857142857142855
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6,
+                "count": 6,
+                "mean_probability": 0.5073706896551724,
+                "observed_frequency": 0.8333333333333334
+              },
+              {
+                "lower": 0.6,
+                "upper": 0.7,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.7,
+                "upper": 0.8,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ],
+            "ece": 0.08488056028398502
+          },
+          "draw": {
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.3,
+                "count": 72,
+                "mean_probability": 0.23569023934191632,
+                "observed_frequency": 0.2777777777777778
+              },
+              {
+                "lower": 0.3,
+                "upper": 0.4,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.6,
+                "upper": 0.7,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.7,
+                "upper": 0.8,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ],
+            "ece": 0.042087538435861466
+          },
+          "away_win": {
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.3,
+                "count": 6,
+                "mean_probability": 0.2584051724137932,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.3,
+                "upper": 0.4,
+                "count": 63,
+                "mean_probability": 0.38205015879969306,
+                "observed_frequency": 0.2698412698412698
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6,
+                "count": 3,
+                "mean_probability": 0.5073706896551724,
+                "observed_frequency": 0.3333333333333333
+              },
+              {
+                "lower": 0.6,
+                "upper": 0.7,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.7,
+                "upper": 0.8,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ],
+            "ece": 0.1269680987198464
+          }
+        }
+      }
+    }
+  },
+  "bootstrap": {
+    "method": "2000 paired IID match resamples; fixed seed 2026; percentile 95% CI; not adjusted for team/group dependence",
+    "interpretation": "model minus baseline; negative is better for log loss/Brier, positive for accuracy",
+    "comparisons": {
+      "elo_minus_uniform": {
+        "log_loss": {
+          "difference": -0.17546307422875332,
+          "ci95": [
+            -0.29317374118472816,
+            -0.05207670190830588
+          ]
+        },
+        "brier_sum": {
+          "difference": -0.12361492814834765,
+          "ci95": [
+            -0.20823978609435062,
+            -0.03423838453016796
+          ]
+        },
+        "accuracy": {
+          "difference": 0.1388888888888889,
+          "ci95": [
+            0.0,
+            0.2777777777777778
+          ]
+        }
+      },
+      "elo_minus_historical": {
+        "log_loss": {
+          "difference": -0.16030332313058063,
+          "ci95": [
+            -0.24361556983622604,
+            -0.07260905094370812
+          ]
+        },
+        "brier_sum": {
+          "difference": -0.11158065059783334,
+          "ci95": [
+            -0.17457440400109228,
+            -0.043808275536424926
+          ]
+        },
+        "accuracy": {
+          "difference": 0.1527777777777778,
+          "ci95": [
+            0.027777777777777776,
+            0.2777777777777778
+          ]
+        }
+      },
+      "poisson_minus_uniform": {
+        "log_loss": {
+          "difference": -0.20389134011726762,
+          "ci95": [
+            -0.3234709746532114,
+            -0.0762696649936858
+          ]
+        },
+        "brier_sum": {
+          "difference": -0.13488034091522172,
+          "ci95": [
+            -0.22352735912495542,
+            -0.040407922705301996
+          ]
+        },
+        "accuracy": {
+          "difference": 0.1388888888888889,
+          "ci95": [
+            0.0,
+            0.2777777777777778
+          ]
+        }
+      },
+      "poisson_minus_historical": {
+        "log_loss": {
+          "difference": -0.18873158901909495,
+          "ci95": [
+            -0.2781723434009249,
+            -0.09052173783744252
+          ]
+        },
+        "brier_sum": {
+          "difference": -0.1228460633647074,
+          "ci95": [
+            -0.1914409212705141,
+            -0.049333015817806386
+          ]
+        },
+        "accuracy": {
+          "difference": 0.1527777777777778,
+          "ci95": [
+            0.027777777777777776,
+            0.2777777777777778
+          ]
+        }
+      }
+    }
+  },
+  "matches": [
+    {
+      "match_id": "760415",
+      "date": "2026-06-11",
+      "group": "Group A",
+      "home_team": "Mexico",
+      "away_team": "South Africa",
+      "home_advantage": 1,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.5073706896551724,
+          0.23422413793103447,
+          0.2584051724137931
+        ],
+        "elo": [
+          0.7482975576610605,
+          0.1531722125037189,
+          0.0985302298352206
+        ],
+        "poisson": [
+          0.7808264376562652,
+          0.15535731748977719,
+          0.06381624485395758
+        ]
+      },
+      "home_score": 2,
+      "away_score": 0,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760414",
+      "date": "2026-06-12",
+      "group": "Group A",
+      "home_team": "South Korea",
+      "away_team": "Czech Republic",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.4558647194030281,
+          0.2176309049206151,
+          0.3265043756763567
+        ],
+        "poisson": [
+          0.45376049438279054,
+          0.2505773446510695,
+          0.29566216096613995
+        ]
+      },
+      "home_score": 2,
+      "away_score": 1,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760416",
+      "date": "2026-06-12",
+      "group": "Group B",
+      "home_team": "Canada",
+      "away_team": "Bosnia and Herzegovina",
+      "home_advantage": 1,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.5073706896551724,
+          0.23422413793103447,
+          0.2584051724137931
+        ],
+        "elo": [
+          0.6763896423740003,
+          0.17739796665534138,
+          0.14621239097065825
+        ],
+        "poisson": [
+          0.7102492312436476,
+          0.18602564680004474,
+          0.10372512195630763
+        ]
+      },
+      "home_score": 1,
+      "away_score": 1,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760417",
+      "date": "2026-06-13",
+      "group": "Group D",
+      "home_team": "United States",
+      "away_team": "Paraguay",
+      "home_advantage": 1,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.5073706896551724,
+          0.23422413793103447,
+          0.2584051724137931
+        ],
+        "elo": [
+          0.39173394610301726,
+          0.2199983056388733,
+          0.38826774825810934
+        ],
+        "poisson": [
+          0.37464059715087966,
+          0.25497252763941436,
+          0.370386875209706
+        ]
+      },
+      "home_score": 4,
+      "away_score": 1,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760419",
+      "date": "2026-06-13",
+      "group": "Group C",
+      "home_team": "Brazil",
+      "away_team": "Morocco",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.4380571209295361,
+          0.2187288088415431,
+          0.34321407022892086
+        ],
+        "poisson": [
+          0.431763723559584,
+          0.25260678167793466,
+          0.3156294947624813
+        ]
+      },
+      "home_score": 1,
+      "away_score": 1,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760420",
+      "date": "2026-06-13",
+      "group": "Group B",
+      "home_team": "Qatar",
+      "away_team": "Switzerland",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.10833365139090104,
+          0.15893255833227263,
+          0.7327337902768264
+        ],
+        "poisson": [
+          0.07154128227899854,
+          0.16214845142554862,
+          0.7663102662954528
+        ]
+      },
+      "home_score": 1,
+      "away_score": 1,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760418",
+      "date": "2026-06-14",
+      "group": "Group C",
+      "home_team": "Haiti",
+      "away_team": "Scotland",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.2685125110688353,
+          0.2109042887430553,
+          0.5205832001881094
+        ],
+        "poisson": [
+          0.22850082488763646,
+          0.2384729980384679,
+          0.5330261770738957
+        ]
+      },
+      "home_score": 0,
+      "away_score": 1,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760421",
+      "date": "2026-06-14",
+      "group": "Group D",
+      "home_team": "Australia",
+      "away_team": "Turkey",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.2955188135177859,
+          0.21462687752632656,
+          0.4898543089558874
+        ],
+        "poisson": [
+          0.25930994848132255,
+          0.2451021748247995,
+          0.4955878766938779
+        ]
+      },
+      "home_score": 2,
+      "away_score": 0,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760422",
+      "date": "2026-06-14",
+      "group": "Group E",
+      "home_team": "Germany",
+      "away_team": "Curaçao",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.7866546952756255,
+          0.13765139422047193,
+          0.07569391050390259
+        ],
+        "poisson": [
+          0.8146424302956389,
+          0.1385073870681557,
+          0.0468501826362055
+        ]
+      },
+      "home_score": 7,
+      "away_score": 1,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760423",
+      "date": "2026-06-14",
+      "group": "Group E",
+      "home_team": "Ivory Coast",
+      "away_team": "Ecuador",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.24385055176881437,
+          0.20651712789666082,
+          0.5496323203345248
+        ],
+        "poisson": [
+          0.2012229869659343,
+          0.23087716232457484,
+          0.5678998507094909
+        ]
+      },
+      "home_score": 1,
+      "away_score": 0,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760425",
+      "date": "2026-06-14",
+      "group": "Group F",
+      "home_team": "Netherlands",
+      "away_team": "Japan",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.3675256560574501,
+          0.21971126566056134,
+          0.41276307828198855
+        ],
+        "poisson": [
+          0.3450382848444266,
+          0.25443581865669984,
+          0.4005258964988735
+        ]
+      },
+      "home_score": 2,
+      "away_score": 2,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760424",
+      "date": "2026-06-15",
+      "group": "Group F",
+      "home_team": "Sweden",
+      "away_team": "Tunisia",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.43855583701690526,
+          0.21870258548966418,
+          0.34274157749343054
+        ],
+        "poisson": [
+          0.4323799894147988,
+          0.2525581303012923,
+          0.3150618802839088
+        ]
+      },
+      "home_score": 5,
+      "away_score": 1,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760426",
+      "date": "2026-06-15",
+      "group": "Group G",
+      "home_team": "Belgium",
+      "away_team": "Egypt",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.5153518739454395,
+          0.2116048953337474,
+          0.2730432307208132
+        ],
+        "poisson": [
+          0.526687220215118,
+          0.23970761703538102,
+          0.23360516274950088
+        ]
+      },
+      "home_score": 1,
+      "away_score": 1,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760428",
+      "date": "2026-06-15",
+      "group": "Group H",
+      "home_team": "Spain",
+      "away_team": "Cape Verde",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.7713288160254212,
+          0.1440865762328362,
+          0.08458460774174262
+        ],
+        "poisson": [
+          0.8014749920013223,
+          0.14524404602991292,
+          0.053280961968764765
+        ]
+      },
+      "home_score": 0,
+      "away_score": 0,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760429",
+      "date": "2026-06-15",
+      "group": "Group H",
+      "home_team": "Saudi Arabia",
+      "away_team": "Uruguay",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.18359535831116955,
+          0.1911282708989682,
+          0.6252763707898623
+        ],
+        "poisson": [
+          0.13881015618450787,
+          0.20601154491502746,
+          0.6551782989004646
+        ]
+      },
+      "home_score": 1,
+      "away_score": 1,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760427",
+      "date": "2026-06-16",
+      "group": "Group G",
+      "home_team": "Iran",
+      "away_team": "New Zealand",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.6293864034542974,
+          0.19012569079173583,
+          0.18048790575396667
+        ],
+        "poisson": [
+          0.659737624380645,
+          0.20448405167869407,
+          0.135778323940661
+        ]
+      },
+      "home_score": 2,
+      "away_score": 2,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760430",
+      "date": "2026-06-16",
+      "group": "Group I",
+      "home_team": "Iraq",
+      "away_team": "Norway",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.2431583007168477,
+          0.2063794272385275,
+          0.5504622720446247
+        ],
+        "poisson": [
+          0.20047038317835966,
+          0.23064249151418198,
+          0.5688871253074583
+        ]
+      },
+      "home_score": 1,
+      "away_score": 4,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760432",
+      "date": "2026-06-16",
+      "group": "Group I",
+      "home_team": "France",
+      "away_team": "Senegal",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.5606376964349234,
+          0.2046353644901965,
+          0.23472693907488007
+        ],
+        "poisson": [
+          0.5809454228649717,
+          0.22768972770338433,
+          0.19136484943164386
+        ]
+      },
+      "home_score": 3,
+      "away_score": 1,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760431",
+      "date": "2026-06-17",
+      "group": "Group J",
+      "home_team": "Austria",
+      "away_team": "Jordan",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.5398636843976835,
+          0.20808630245091456,
+          0.25205001315140196
+        ],
+        "poisson": [
+          0.5562393591508543,
+          0.2335673655525277,
+          0.21019327529661794
+        ]
+      },
+      "home_score": 3,
+      "away_score": 1,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760433",
+      "date": "2026-06-17",
+      "group": "Group J",
+      "home_team": "Argentina",
+      "away_team": "Algeria",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.6316005914142846,
+          0.18957832988266565,
+          0.17882107870304983
+        ],
+        "poisson": [
+          0.6621849302362927,
+          0.2036547433963165,
+          0.1341603263673909
+        ]
+      },
+      "home_score": 3,
+      "away_score": 0,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760434",
+      "date": "2026-06-17",
+      "group": "Group L",
+      "home_team": "Ghana",
+      "away_team": "Panama",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.2128456682906882,
+          0.19950335872692626,
+          0.5876509729823856
+        ],
+        "poisson": [
+          0.16828757775911596,
+          0.2192079390035543,
+          0.6125044832373298
+        ]
+      },
+      "home_score": 1,
+      "away_score": 0,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760435",
+      "date": "2026-06-17",
+      "group": "Group K",
+      "home_team": "Portugal",
+      "away_team": "DR Congo",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.6679580095983298,
+          0.1798547145157121,
+          0.15218727588595793
+        ],
+        "poisson": [
+          0.701421269182184,
+          0.18945655110506085,
+          0.10912217971275527
+        ]
+      },
+      "home_score": 1,
+      "away_score": 1,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760437",
+      "date": "2026-06-17",
+      "group": "Group L",
+      "home_team": "England",
+      "away_team": "Croatia",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.44304362778349077,
+          0.21845482831999513,
+          0.3385015438965142
+        ],
+        "poisson": [
+          0.43792533992988486,
+          0.2520989056674478,
+          0.30997575440266734
+        ]
+      },
+      "home_score": 4,
+      "away_score": 2,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760436",
+      "date": "2026-06-18",
+      "group": "Group K",
+      "home_team": "Uzbekistan",
+      "away_team": "Colombia",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.19806119355641658,
+          0.19550174457507005,
+          0.6064370618685134
+        ],
+        "poisson": [
+          0.15318132626801745,
+          0.21280450963125544,
+          0.6340141641007272
+        ]
+      },
+      "home_score": 1,
+      "away_score": 3,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760438",
+      "date": "2026-06-18",
+      "group": "Group A",
+      "home_team": "Czech Republic",
+      "away_team": "South Africa",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.5658576868034447,
+          0.2037005750048953,
+          0.23044173819165992
+        ],
+        "poisson": [
+          0.5870969544015747,
+          0.22612188640930908,
+          0.18678115918911622
+        ]
+      },
+      "home_score": 1,
+      "away_score": 1,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760439",
+      "date": "2026-06-18",
+      "group": "Group B",
+      "home_team": "Switzerland",
+      "away_team": "Bosnia and Herzegovina",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.6469211536545065,
+          0.18565108319814555,
+          0.16742776314734795
+        ],
+        "poisson": [
+          0.6789418270394336,
+          0.1977995210749044,
+          0.12325865188566197
+        ]
+      },
+      "home_score": 4,
+      "away_score": 1,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760440",
+      "date": "2026-06-18",
+      "group": "Group B",
+      "home_team": "Canada",
+      "away_team": "Qatar",
+      "home_advantage": 1,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.5073706896551724,
+          0.23422413793103447,
+          0.2584051724137931
+        ],
+        "elo": [
+          0.7565897323581049,
+          0.1499797591123946,
+          0.09343050852950045
+        ],
+        "poisson": [
+          0.7883772826010675,
+          0.15172168324031296,
+          0.05990103415861958
+        ]
+      },
+      "home_score": 6,
+      "away_score": 0,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760441",
+      "date": "2026-06-19",
+      "group": "Group A",
+      "home_team": "Mexico",
+      "away_team": "South Korea",
+      "home_advantage": 1,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.5073706896551724,
+          0.23422413793103447,
+          0.2584051724137931
+        ],
+        "elo": [
+          0.5463170186824045,
+          0.20706033604157953,
+          0.24662264527601604
+        ],
+        "poisson": [
+          0.5639506859045393,
+          0.23180510852090971,
+          0.20424420557455092
+        ]
+      },
+      "home_score": 1,
+      "away_score": 0,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760442",
+      "date": "2026-06-19",
+      "group": "Group D",
+      "home_team": "United States",
+      "away_team": "Australia",
+      "home_advantage": 1,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.5073706896551724,
+          0.23422413793103447,
+          0.2584051724137931
+        ],
+        "elo": [
+          0.4260364974364059,
+          0.2192811371328456,
+          0.35468236543074844
+        ],
+        "poisson": [
+          0.4169114319379375,
+          0.2536335341352652,
+          0.3294550339267972
+        ]
+      },
+      "home_score": 2,
+      "away_score": 0,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760445",
+      "date": "2026-06-19",
+      "group": "Group C",
+      "home_team": "Scotland",
+      "away_team": "Morocco",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.21236717444269398,
+          0.19938085872096878,
+          0.5882519668363373
+        ],
+        "poisson": [
+          0.16779231674111975,
+          0.21900920687873146,
+          0.6131984763801487
+        ]
+      },
+      "home_score": 0,
+      "away_score": 1,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760443",
+      "date": "2026-06-20",
+      "group": "Group D",
+      "home_team": "Turkey",
+      "away_team": "Paraguay",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.45531067655976043,
+          0.21767004568096873,
+          0.3270192777592708
+        ],
+        "poisson": [
+          0.4530765677789548,
+          0.25064943235273723,
+          0.296273999868308
+        ]
+      },
+      "home_score": 0,
+      "away_score": 1,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760444",
+      "date": "2026-06-20",
+      "group": "Group C",
+      "home_team": "Brazil",
+      "away_team": "Haiti",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.734561568257796,
+          0.1582714696310436,
+          0.10716696211116035
+        ],
+        "poisson": [
+          0.7680378654685451,
+          0.1613537283904311,
+          0.07060840614102377
+        ]
+      },
+      "home_score": 3,
+      "away_score": 0,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760447",
+      "date": "2026-06-20",
+      "group": "Group F",
+      "home_team": "Netherlands",
+      "away_team": "Sweden",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.5820794897248804,
+          0.2006216969156157,
+          0.2172988133595039
+        ],
+        "poisson": [
+          0.606053236220492,
+          0.22103019832072815,
+          0.17291656545877981
+        ]
+      },
+      "home_score": 5,
+      "away_score": 1,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760448",
+      "date": "2026-06-20",
+      "group": "Group E",
+      "home_team": "Germany",
+      "away_team": "Ivory Coast",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.555178181509329,
+          0.2055839582263589,
+          0.23923786026431207
+        ],
+        "poisson": [
+          0.5744863901202633,
+          0.22929126007964912,
+          0.19622234980008763
+        ]
+      },
+      "home_score": 2,
+      "away_score": 1,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760446",
+      "date": "2026-06-21",
+      "group": "Group E",
+      "home_team": "Ecuador",
+      "away_team": "Curaçao",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.7833193487479608,
+          0.13907924029631827,
+          0.07760141095572098
+        ],
+        "poisson": [
+          0.8118167700723498,
+          0.13997236413899802,
+          0.04821086578865222
+        ]
+      },
+      "home_score": 0,
+      "away_score": 0,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760449",
+      "date": "2026-06-21",
+      "group": "Group F",
+      "home_team": "Tunisia",
+      "away_team": "Japan",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.1678924156175311,
+          0.1858177791947471,
+          0.6462898051877219
+        ],
+        "poisson": [
+          0.12369777848143752,
+          0.19804469077718453,
+          0.6782575307413778
+        ]
+      },
+      "home_score": 0,
+      "away_score": 4,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760450",
+      "date": "2026-06-21",
+      "group": "Group H",
+      "home_team": "Uruguay",
+      "away_team": "Cape Verde",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.6126998644546832,
+          0.19408814322928947,
+          0.19321199231602731
+        ],
+        "poisson": [
+          0.6410969069349404,
+          0.21058562900067673,
+          0.14831746406438284
+        ]
+      },
+      "home_score": 2,
+      "away_score": 2,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760451",
+      "date": "2026-06-21",
+      "group": "Group G",
+      "home_team": "Belgium",
+      "away_team": "Iran",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.4364054560357829,
+          0.21881378183280004,
+          0.3447807621314171
+        ],
+        "poisson": [
+          0.42972274583153003,
+          0.2527644895664107,
+          0.3175127646020592
+        ]
+      },
+      "home_score": 0,
+      "away_score": 0,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760453",
+      "date": "2026-06-21",
+      "group": "Group H",
+      "home_team": "Spain",
+      "away_team": "Saudi Arabia",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.7798114742026473,
+          0.1405643793383083,
+          0.07962414645904445
+        ],
+        "poisson": [
+          0.808820827229468,
+          0.14151401952680545,
+          0.049665153243726605
+        ]
+      },
+      "home_score": 4,
+      "away_score": 0,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760452",
+      "date": "2026-06-22",
+      "group": "Group G",
+      "home_team": "New Zealand",
+      "away_team": "Egypt",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.23802857166371483,
+          0.20533318331579872,
+          0.5566382450204865
+        ],
+        "poisson": [
+          0.19491693526622778,
+          0.22886683582001055,
+          0.5762162289137617
+        ]
+      },
+      "home_score": 1,
+      "away_score": 3,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760456",
+      "date": "2026-06-22",
+      "group": "Group J",
+      "home_team": "Argentina",
+      "away_team": "Austria",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.6502710749760571,
+          0.18475956656098452,
+          0.16496935846295852
+        ],
+        "poisson": [
+          0.6825634860464908,
+          0.19649332904380068,
+          0.12094318490970866
+        ]
+      },
+      "home_score": 2,
+      "away_score": 0,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760457",
+      "date": "2026-06-22",
+      "group": "Group I",
+      "home_team": "France",
+      "away_team": "Iraq",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.6895398987556773,
+          0.17341081105337378,
+          0.13704929019094894
+        ],
+        "poisson": [
+          0.7237995857505277,
+          0.18058787038965227,
+          0.09561254385982002
+        ]
+      },
+      "home_score": 3,
+      "away_score": 0,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760454",
+      "date": "2026-06-23",
+      "group": "Group I",
+      "home_team": "Norway",
+      "away_team": "Senegal",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.40409422979314386,
+          0.2198888046908631,
+          0.37601696551599306
+        ],
+        "poisson": [
+          0.38984110355760115,
+          0.2547676577154369,
+          0.35539123872696193
+        ]
+      },
+      "home_score": 3,
+      "away_score": 2,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760455",
+      "date": "2026-06-23",
+      "group": "Group J",
+      "home_team": "Jordan",
+      "away_team": "Algeria",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.23460321082640545,
+          0.204608837070784,
+          0.5607879521028106
+        ],
+        "poisson": [
+          0.1912320794645378,
+          0.22764509369116429,
+          0.581122826844298
+        ]
+      },
+      "home_score": 1,
+      "away_score": 2,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760458",
+      "date": "2026-06-23",
+      "group": "Group L",
+      "home_team": "England",
+      "away_team": "Ghana",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.7549074339159882,
+          0.15063449989050756,
+          0.09445806619350415
+        ],
+        "poisson": [
+          0.7868558575760615,
+          0.1524599802223127,
+          0.060684162201625765
+        ]
+      },
+      "home_score": 0,
+      "away_score": 0,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760460",
+      "date": "2026-06-23",
+      "group": "Group L",
+      "home_team": "Panama",
+      "away_team": "Croatia",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.24688016176250033,
+          0.20711013461288005,
+          0.5460097036246196
+        ],
+        "poisson": [
+          0.20452546557724036,
+          0.23189035425082188,
+          0.5635841801719378
+        ]
+      },
+      "home_score": 0,
+      "away_score": 1,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760461",
+      "date": "2026-06-23",
+      "group": "Group K",
+      "home_team": "Portugal",
+      "away_team": "Uzbekistan",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.6201712462652472,
+          0.19234933415741431,
+          0.18747941957733838
+        ],
+        "poisson": [
+          0.6494856103997109,
+          0.20788680402735807,
+          0.14262758557293106
+        ]
+      },
+      "home_score": 5,
+      "away_score": 0,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760459",
+      "date": "2026-06-24",
+      "group": "Group K",
+      "home_team": "Colombia",
+      "away_team": "DR Congo",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.655298559658838,
+          0.18339931934161363,
+          0.16130212099954827
+        ],
+        "poisson": [
+          0.6879693892518591,
+          0.1945165925770534,
+          0.11751401817108736
+        ]
+      },
+      "home_score": 1,
+      "away_score": 0,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760462",
+      "date": "2026-06-24",
+      "group": "Group B",
+      "home_team": "Bosnia and Herzegovina",
+      "away_team": "Qatar",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.5005928014339914,
+          0.21343379839157817,
+          0.2859734001744304
+        ],
+        "poisson": [
+          0.5087230253448889,
+          0.24295892369026817,
+          0.24831805096484294
+        ]
+      },
+      "home_score": 3,
+      "away_score": 1,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760463",
+      "date": "2026-06-24",
+      "group": "Group B",
+      "home_team": "Switzerland",
+      "away_team": "Canada",
+      "home_advantage": -1,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.2584051724137931,
+          0.23422413793103447,
+          0.5073706896551724
+        ],
+        "elo": [
+          0.35530302665704316,
+          0.2193064611590938,
+          0.4253905121838631
+        ],
+        "poisson": [
+          0.33020579686154455,
+          0.2536807035652501,
+          0.4161134995732053
+        ]
+      },
+      "home_score": 2,
+      "away_score": 1,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760464",
+      "date": "2026-06-24",
+      "group": "Group C",
+      "home_team": "Morocco",
+      "away_team": "Haiti",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.6994823781660746,
+          0.17026839440471453,
+          0.13024922742921077
+        ],
+        "poisson": [
+          0.7338622032690156,
+          0.17641389666058543,
+          0.08972390007039895
+        ]
+      },
+      "home_score": 4,
+      "away_score": 2,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760465",
+      "date": "2026-06-24",
+      "group": "Group C",
+      "home_team": "Scotland",
+      "away_team": "Brazil",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.17869613674375173,
+          0.18953702837368427,
+          0.6317668348825639
+        ],
+        "poisson": [
+          0.13403927863383208,
+          0.20359229965499992,
+          0.662368421711168
+        ]
+      },
+      "home_score": 0,
+      "away_score": 3,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760466",
+      "date": "2026-06-25",
+      "group": "Group A",
+      "home_team": "South Africa",
+      "away_team": "South Korea",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.18271838113955163,
+          0.19084766005703976,
+          0.6264339588034087
+        ],
+        "poisson": [
+          0.1379524987928335,
+          0.20558290859840456,
+          0.656464592608762
+        ]
+      },
+      "home_score": 1,
+      "away_score": 0,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760467",
+      "date": "2026-06-25",
+      "group": "Group A",
+      "home_team": "Czech Republic",
+      "away_team": "Mexico",
+      "home_advantage": -1,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.2584051724137931,
+          0.23422413793103447,
+          0.5073706896551724
+        ],
+        "elo": [
+          0.19666038610416778,
+          0.19509868334175876,
+          0.6082409305540734
+        ],
+        "poisson": [
+          0.1517715647861598,
+          0.21216955915376526,
+          0.6360588760600749
+        ]
+      },
+      "home_score": 0,
+      "away_score": 3,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760468",
+      "date": "2026-06-25",
+      "group": "Group E",
+      "home_team": "Ecuador",
+      "away_team": "Germany",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.38432769375231957,
+          0.21998179111530958,
+          0.39569051513237086
+        ],
+        "poisson": [
+          0.3655571573128139,
+          0.2549416200900534,
+          0.37950122259713265
+        ]
+      },
+      "home_score": 2,
+      "away_score": 1,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760471",
+      "date": "2026-06-25",
+      "group": "Group F",
+      "home_team": "Japan",
+      "away_team": "Sweden",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.6032711274559978,
+          0.19620115186755718,
+          0.2005277206764451
+        ],
+        "poisson": [
+          0.6304165268221601,
+          0.21391063152839385,
+          0.15567284164944603
+        ]
+      },
+      "home_score": 1,
+      "away_score": 1,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760472",
+      "date": "2026-06-25",
+      "group": "Group F",
+      "home_team": "Tunisia",
+      "away_team": "Netherlands",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.18275179294295876,
+          0.19085838447573622,
+          0.626389822581305
+        ],
+        "poisson": [
+          0.13798514549387111,
+          0.2055992744185697,
+          0.6564155800875592
+        ]
+      },
+      "home_score": 1,
+      "away_score": 3,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760473",
+      "date": "2026-06-25",
+      "group": "Group E",
+      "home_team": "Curaçao",
+      "away_team": "Ivory Coast",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.14987691621701874,
+          0.17891764807936653,
+          0.6712054357036147
+        ],
+        "poisson": [
+          0.10702536715458191,
+          0.18814061783400263,
+          0.7048340150114155
+        ]
+      },
+      "home_score": 0,
+      "away_score": 2,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760469",
+      "date": "2026-06-26",
+      "group": "Group D",
+      "home_team": "Paraguay",
+      "away_team": "Australia",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.42427871350218865,
+          0.219348999376986,
+          0.3563722871208253
+        ],
+        "poisson": [
+          0.41474027441713,
+          0.2537599551814024,
+          0.33149977040146755
+        ]
+      },
+      "home_score": 0,
+      "away_score": 0,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760470",
+      "date": "2026-06-26",
+      "group": "Group D",
+      "home_team": "Turkey",
+      "away_team": "United States",
+      "home_advantage": -1,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.2584051724137931,
+          0.23422413793103447,
+          0.5073706896551724
+        ],
+        "elo": [
+          0.45354689604489057,
+          0.2177925292742067,
+          0.32866057468090276
+        ],
+        "poisson": [
+          0.45089903355029887,
+          0.2508751424039151,
+          0.298225824045786
+        ]
+      },
+      "home_score": 3,
+      "away_score": 2,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760474",
+      "date": "2026-06-26",
+      "group": "Group I",
+      "home_team": "Senegal",
+      "away_team": "Iraq",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.5366577326792301,
+          0.2085805653715296,
+          0.25476170194924025
+        ],
+        "poisson": [
+          0.5523970228982479,
+          0.23442085000558885,
+          0.21318212709616333
+        ]
+      },
+      "home_score": 5,
+      "away_score": 0,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760475",
+      "date": "2026-06-26",
+      "group": "Group I",
+      "home_team": "Norway",
+      "away_team": "France",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.24609438949996254,
+          0.20695783009929808,
+          0.5469477804007394
+        ],
+        "poisson": [
+          0.20366756195135535,
+          0.23162973103693343,
+          0.5647027070117112
+        ]
+      },
+      "home_score": 1,
+      "away_score": 4,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760476",
+      "date": "2026-06-27",
+      "group": "Group G",
+      "home_team": "Egypt",
+      "away_team": "Iran",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.31446467992443594,
+          0.2166170299250891,
+          0.468918290150475
+        ],
+        "poisson": [
+          0.2814242127911025,
+          0.2487167755953558,
+          0.46985901161354166
+        ]
+      },
+      "home_score": 1,
+      "away_score": 1,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760477",
+      "date": "2026-06-27",
+      "group": "Group G",
+      "home_team": "New Zealand",
+      "away_team": "Belgium",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.15153882725946458,
+          0.17959332636260408,
+          0.6688678463779314
+        ],
+        "poisson": [
+          0.10853241669650375,
+          0.1890885718738796,
+          0.7023790114296167
+        ]
+      },
+      "home_score": 1,
+      "away_score": 5,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760478",
+      "date": "2026-06-27",
+      "group": "Group H",
+      "home_team": "Cape Verde",
+      "away_team": "Saudi Arabia",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.40396826172569794,
+          0.21989077611591393,
+          0.3761409621583882
+        ],
+        "poisson": [
+          0.38968596959662993,
+          0.25477134478014773,
+          0.35554268562322233
+        ]
+      },
+      "home_score": 0,
+      "away_score": 0,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760479",
+      "date": "2026-06-27",
+      "group": "Group H",
+      "home_team": "Uruguay",
+      "away_team": "Spain",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.20694384114397732,
+          0.19796017787123887,
+          0.5950959809847838
+        ],
+        "poisson": [
+          0.16220825385652238,
+          0.21671697287387037,
+          0.6210747732696071
+        ]
+      },
+      "home_score": 0,
+      "away_score": 1,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760480",
+      "date": "2026-06-27",
+      "group": "Group L",
+      "home_team": "Croatia",
+      "away_team": "Ghana",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.7183640417806783,
+          0.16399033516651312,
+          0.11764562305280853
+        ],
+        "poisson": [
+          0.7525214230130755,
+          0.16836280309969417,
+          0.07911577388723048
+        ]
+      },
+      "home_score": 2,
+      "away_score": 1,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760481",
+      "date": "2026-06-27",
+      "group": "Group K",
+      "home_team": "Colombia",
+      "away_team": "Portugal",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.37499526222340684,
+          0.2198718832278772,
+          0.405132854548716
+        ],
+        "poisson": [
+          0.3541436306474083,
+          0.25473601233550724,
+          0.39112035701708453
+        ]
+      },
+      "home_score": 0,
+      "away_score": 0,
+      "actual_class": "draw"
+    },
+    {
+      "match_id": "760482",
+      "date": "2026-06-27",
+      "group": "Group K",
+      "home_team": "DR Congo",
+      "away_team": "Uzbekistan",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.3359538185522088,
+          0.21829513233599335,
+          0.44575104911179786
+        ],
+        "poisson": [
+          0.3069263010923951,
+          0.2518033182391175,
+          0.44127038066848734
+        ]
+      },
+      "home_score": 3,
+      "away_score": 1,
+      "actual_class": "home_win"
+    },
+    {
+      "match_id": "760485",
+      "date": "2026-06-27",
+      "group": "Group L",
+      "home_team": "Panama",
+      "away_team": "England",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.2059975687015166,
+          0.19770614709240358,
+          0.5962962842060798
+        ],
+        "poisson": [
+          0.1612395139854735,
+          0.2163095260517282,
+          0.6224509599627982
+        ]
+      },
+      "home_score": 0,
+      "away_score": 2,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760483",
+      "date": "2026-06-28",
+      "group": "Group J",
+      "home_team": "Jordan",
+      "away_team": "Argentina",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.0902370063369531,
+          0.14790641923592307,
+          0.7618565744271238
+        ],
+        "poisson": [
+          0.057485867779594586,
+          0.14940848694706096,
+          0.7931056452733445
+        ]
+      },
+      "home_score": 1,
+      "away_score": 3,
+      "actual_class": "away_win"
+    },
+    {
+      "match_id": "760484",
+      "date": "2026-06-28",
+      "group": "Group J",
+      "home_team": "Algeria",
+      "away_team": "Austria",
+      "home_advantage": 0,
+      "probabilities": {
+        "uniform": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "historical": [
+          0.38205015879969334,
+          0.2358996824006133,
+          0.38205015879969334
+        ],
+        "elo": [
+          0.4115175271806265,
+          0.21974183376363246,
+          0.36874063905574106
+        ],
+        "poisson": [
+          0.39898971361686836,
+          0.25449292490406605,
+          0.3465173614790657
+        ]
+      },
+      "home_score": 3,
+      "away_score": 3,
+      "actual_class": "draw"
+    }
+  ],
+  "limitations": [
+    "Retrospective analysis; no claim forecasts were generated before the event.",
+    "Current historical snapshot filtered by match date, not an archived point-in-time database.",
+    "Historical goals can include extra time; evaluation is group-stage regulation time only.",
+    "Single tournament and repeated teams; bootstrap intervals may understate uncertainty.",
+    "No bookmaker odds obtained; no market outperformance or betting profitability established.",
+    "Calibration bins are descriptive; no calibration fitting on held-out tournament outcomes.",
+    "Uniform argmax ties choose home; its accuracy is an arbitrary tie-break, not random-guess expected accuracy."
+  ]
+}

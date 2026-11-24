@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "historical_source_url": "https://raw.githubusercontent.com/martj42/international_results/master/results.csv",
+  "historical_source_license": "CC0-1.0",
+  "historical_source_sha256": "c1773d3e75629ceaa8215f09173f00a9053c04ecfb6bd1beb0b76080b1528dfb",
+  "source_retrieved_utc": "2026-11-24T12:36:42.847877+00:00",
+  "derivation": "History selected from 1990-01-01 inclusive to 2026-06-11 exclusive; outcome scores joined from CC0 tournament records by team pair and date within one day.",
+  "fixtures_provenance": "Minimal fixture facts reconstructed from ESPN group-stage event metadata; no raw API responses, logos, standings, text or images redistributed.",
+  "fixtures_source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard",
+  "limitations": [
+    "Current snapshot filtered retrospectively, not an archived pre-tournament data vintage.",
+    "Historical match scores include extra time, excluding shootout goals.",
+    "Fixture dates use UTC and can differ from local dates."
+  ],
+  "files": {
+    "history.csv": {
+      "sha256": "886c9f68716958607132a86012472a689dacd6c5ed9f0693b4434e2f40893d1c",
+      "rows": 32325
+    },
+    "fixtures.csv": {
+      "sha256": "e381fa8cc9c1332136cc219cab349b126fb8bba8c1ce652a883a5b5de0df0bb6",
+      "rows": 72
+    },
+    "outcomes.csv": {
+      "sha256": "c7d0b23aed34ec42f0f1601d2bc452681602975ba86659881e56d835ceb3ccf6",
+      "rows": 72
+    }
+  }
+}

@@ -1,0 +1,73 @@
+match_id,date,group,home_team,away_team,home_advantage
+760415,2026-06-11,Group A,Mexico,South Africa,1
+760414,2026-06-12,Group A,South Korea,Czech Republic,0
+760416,2026-06-12,Group B,Canada,Bosnia and Herzegovina,1
+760417,2026-06-13,Group D,United States,Paraguay,1
+760419,2026-06-13,Group C,Brazil,Morocco,0
+760420,2026-06-13,Group B,Qatar,Switzerland,0
+760418,2026-06-14,Group C,Haiti,Scotland,0
+760421,2026-06-14,Group D,Australia,Turkey,0
+760422,2026-06-14,Group E,Germany,Curaçao,0
+760423,2026-06-14,Group E,Ivory Coast,Ecuador,0
+760425,2026-06-14,Group F,Netherlands,Japan,0
+760424,2026-06-15,Group F,Sweden,Tunisia,0
+760426,2026-06-15,Group G,Belgium,Egypt,0
+760428,2026-06-15,Group H,Spain,Cape Verde,0
+760429,2026-06-15,Group H,Saudi Arabia,Uruguay,0
+760427,2026-06-16,Group G,Iran,New Zealand,0
+760430,2026-06-16,Group I,Iraq,Norway,0
+760432,2026-06-16,Group I,France,Senegal,0
+760431,2026-06-17,Group J,Austria,Jordan,0
+760433,2026-06-17,Group J,Argentina,Algeria,0
+760434,2026-06-17,Group L,Ghana,Panama,0
+760435,2026-06-17,Group K,Portugal,DR Congo,0
+760437,2026-06-17,Group L,England,Croatia,0
+760436,2026-06-18,Group K,Uzbekistan,Colombia,0
+760438,2026-06-18,Group A,Czech Republic,South Africa,0
+760439,2026-06-18,Group B,Switzerland,Bosnia and Herzegovina,0
+760440,2026-06-18,Group B,Canada,Qatar,1
+760441,2026-06-19,Group A,Mexico,South Korea,1
+760442,2026-06-19,Group D,United States,Australia,1
+760445,2026-06-19,Group C,Scotland,Morocco,0
+760443,2026-06-20,Group D,Turkey,Paraguay,0
+760444,2026-06-20,Group C,Brazil,Haiti,0
+760447,2026-06-20,Group F,Netherlands,Sweden,0
+760448,2026-06-20,Group E,Germany,Ivory Coast,0
+760446,2026-06-21,Group E,Ecuador,Curaçao,0
+760449,2026-06-21,Group F,Tunisia,Japan,0
+760450,2026-06-21,Group H,Uruguay,Cape Verde,0
+760451,2026-06-21,Group G,Belgium,Iran,0
+760453,2026-06-21,Group H,Spain,Saudi Arabia,0
+760452,2026-06-22,Group G,New Zealand,Egypt,0
+760456,2026-06-22,Group J,Argentina,Austria,0
+760457,2026-06-22,Group I,France,Iraq,0
+760454,2026-06-23,Group I,Norway,Senegal,0
+760455,2026-06-23,Group J,Jordan,Algeria,0
+760458,2026-06-23,Group L,England,Ghana,0
+760460,2026-06-23,Group L,Panama,Croatia,0
+760461,2026-06-23,Group K,Portugal,Uzbekistan,0
+760459,2026-06-24,Group K,Colombia,DR Congo,0
+760462,2026-06-24,Group B,Bosnia and Herzegovina,Qatar,0
+760463,2026-06-24,Group B,Switzerland,Canada,-1
+760464,2026-06-24,Group C,Morocco,Haiti,0
+760465,2026-06-24,Group C,Scotland,Brazil,0
+760466,2026-06-25,Group A,South Africa,South Korea,0
+760467,2026-06-25,Group A,Czech Republic,Mexico,-1
+760468,2026-06-25,Group E,Ecuador,Germany,0
+760471,2026-06-25,Group F,Japan,Sweden,0
+760472,2026-06-25,Group F,Tunisia,Netherlands,0
+760473,2026-06-25,Group E,Curaçao,Ivory Coast,0
+760469,2026-06-26,Group D,Paraguay,Australia,0
+760470,2026-06-26,Group D,Turkey,United States,-1
+760474,2026-06-26,Group I,Senegal,Iraq,0
+760475,2026-06-26,Group I,Norway,France,0
+760476,2026-06-27,Group G,Egypt,Iran,0
+760477,2026-06-27,Group G,New Zealand,Belgium,0
+760478,2026-06-27,Group H,Cape Verde,Saudi Arabia,0
+760479,2026-06-27,Group H,Uruguay,Spain,0
+760480,2026-06-27,Group L,Croatia,Ghana,0
+760481,2026-06-27,Group K,Colombia,Portugal,0
+760482,2026-06-27,Group K,DR Congo,Uzbekistan,0
+760485,2026-06-27,Group L,Panama,England,0
+760483,2026-06-28,Group J,Jordan,Argentina,0
+760484,2026-06-28,Group J,Algeria,Austria,0
